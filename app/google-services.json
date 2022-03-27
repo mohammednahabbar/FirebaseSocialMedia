@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46940323066",
+    "project_id": "fir-android-8a641",
+    "storage_bucket": "fir-android-8a641.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46940323066:android:834a6a3854310dc3c39d43",
+        "android_client_info": {
+          "package_name": "com.biosteam99.loginfirabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46940323066-sp9k4i73v3mvkllcas7oter1vu6nn30q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyFQI8ErR_TXqtNti3bjFSW_XgrFOG5Qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46940323066-sp9k4i73v3mvkllcas7oter1vu6nn30q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

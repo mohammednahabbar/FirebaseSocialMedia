@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1B30"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_login" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Please fill The Input below Here"
+                android:textColor="#433A57"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_edit"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#8C7EAA"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="#8C7EAA"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edit"
+                android:drawableLeft="@drawable/ic_baseline_mail_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#8C7EAA"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="#8C7EAA"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edit"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#8C7EAA"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="#8C7EAA"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edit"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#8C7EAA"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="#8C7EAA"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="90dp"
+                android:background="@drawable/bg_btn_login"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="REGISTER"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Don t not an account ? "
+            android:textColor="#433A57"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" Sing Up"
+            android:textColor="#17F1DE"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
